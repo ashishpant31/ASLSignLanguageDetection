@@ -1,6 +1,5 @@
 # ASL Sign Language Detection
 
-**Project Overview:**
 The ASL Sign Language Detection project aims to develop a machine learning model capable of accurately identifying and classifying American Sign Language (ASL) gestures from image data captured using a laptop camera. The ultimate goal is to facilitate real-time communication for individuals with hearing impairments.
 
 **Data Collection and Preprocessing:**
