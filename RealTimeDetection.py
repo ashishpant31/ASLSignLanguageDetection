@@ -1,12 +1,8 @@
-from keras.models import model_from_json
+import tensorflow as tf
 import cv2
 import numpy as np
 
-json_file = open("ASLSignLanguageDetectionModel48x48.json", "r")
-model_json = json_file.read()
-json_file.close()
-model = model_from_json(model_json)
-model.load_weights("ASLSignLanguageDetectionModel48x48.h5.h5")
+model = tf.keras.models.load_model("ASLSignLanguageDetectionModel48x48.keras")
 
 def extract_features(image):
     feature = np.array(image)
