@@ -32,7 +32,7 @@ model.add(Dropout(0.3))
 model.add(Dense(13, activation='softmax'))
 
 # Load the weights
-model.load_weights("Model\ASLSignLanguageDetectionModel48x48.h5")
+model.load_weights("Model\ASL_Sign_Language_Detection_Model_48x48.h5")
 
 def extract_features(image):
     feature = np.array(image)
@@ -57,9 +57,13 @@ def main():
         st.markdown('<h2 style="color: cyan">The Need for Technological Solutions<h2>', unsafe_allow_html=True)
         st.markdown("<h5>Current solutions like sign language interpreters, while valuable, can be limited by factors like cost, scheduling, and geography. Existing technological solutions might be expensive, require specialized hardware, or lack real-time functionality, hindering widespread adoption.<h5>", unsafe_allow_html=True)
         
-        st.markdown('<h2 style="color: cyan">Working of this application<h2>', unsafe_allow_html=True)
+        st.markdown('<h2 style="color: aqua">Working of this application<h2>', unsafe_allow_html=True)
         st.markdown("<h5>1. This application offers two main functionalities: image-based ASL detection and video-based ASL detection. You can either upload an image containing an ASL sign or use your webcam to detect ASL signs in real-time.<h5>", unsafe_allow_html=True)
         st.markdown("<h5>2. Developed with Streamlit and OpenCV, The Silent Interpreter aims to bridge communication gaps and enhance accessibility for the deaf and hard-of-hearing community.<h5>", unsafe_allow_html=True)
+
+        st.markdown('<h2 style="color: sky_blue">Social Media<h2>', unsafe_allow_html=True)
+        st.link_button("Github", "https://github.com/ashishpant31", disabled=False,use_container_width=True)
+        st.link_button("LinkedIn", "https://www.linkedin.com/in/ashishpant31/", disabled=False,use_container_width=True)
 
     def main():
         st.title("The Silent Interpreter: ASL Detection and Translation")
